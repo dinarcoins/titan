@@ -1,0 +1,1189 @@
+h2 {
+  font-size: 1.875rem;
+  line-height: 2.813rem;
+  text-transform: uppercase;
+  @include media-breakpoint-up(lg) {
+    font-size: 2.5rem;
+    line-height: 4.188rem;
+  }
+  @include media-breakpoint-up(xl) {
+    font-size: 3.5rem;
+  }
+}
+
+.titan-prod-pange {
+  @include clearfix;
+  padding-top: 3rem;
+  
+  h2 {
+    margin-bottom: 2.75rem;
+    font-size: 2rem;
+    line-height: 3rem;
+    @include media-breakpoint-up(xs) {
+      font-size: 2.625rem;
+      line-height: 4rem;
+    }
+  }
+
+  .list-product-range__sp {
+    margin-bottom: 2.188rem;
+  }
+
+  .titan-prod-pange__list-sp {
+    height: auto;
+    @include media-breakpoint-up(lg) {
+      height: 0;
+      opacity: 0;
+    }
+  }
+
+  .list-product-range__pc {
+    .titan-prod-pange__list {
+      .col-md-2 {
+        margin-bottom: 1.5rem;
+      }
+    }
+  }
+
+  .nav-tabs {
+    border: 0;
+    margin-bottom: 3.75rem;
+    justify-content: center;
+    .nav-item {
+      @include media-breakpoint-up(md) {
+        margin-bottom: 1rem;
+      }
+      @include media-breakpoint-up(xl) {
+        margin-bottom: 0;
+      }
+      &:not(:last-child) {
+        margin-right: 1rem;
+      }
+     
+      .nav-link {
+        font-size: 1rem;
+        line-height: 1.688rem;
+        background: $light;
+        border: 1px solid $dark-gray-2;
+        color: $dark-gray;
+        border-radius: 0;
+        @include media-breakpoint-up(xxl) {
+          font-size: 1.125rem;
+        }
+      }
+      .nav-link.active {
+        color: $light;
+        background: $primary;
+        border: 1px solid $primary;
+      }
+    }
+  }
+
+  .titan-prod-pange__list {
+
+    .col-lg-4 {
+      .image {
+        border-radius: 15px;
+        overflow: hidden;
+        img {
+          @include trans-tranfom;
+        }
+      }
+  
+      .content {
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 38.23%, #000000);
+        border-radius: 15px;
+        bottom: 0;
+        left: 15px;
+        right: 15px;
+        padding: 1.25rem;
+        @include trans-slow;
+        @include media-breakpoint-up(lg) {
+          height: 6rem;
+          overflow: hidden;
+        }
+  
+        h5 {
+          color: $light;
+          font-size: 1.125rem;
+          line-height: 2.063rem;
+          letter-spacing: 0.05em;
+          margin-bottom: 0;
+
+          @include media-breakpoint-up(lg) {
+            line-height: 1.8rem;  
+          }
+
+          @include media-breakpoint-up(xl) {
+            font-size: 1.5rem;
+            line-height: 2.063rem;  
+          }
+        }
+        
+        p {
+          color: $light;
+          font-size: 1rem;
+          line-height: 1.5rem;
+          margin-bottom: 0.5rem;
+          @include media-breakpoint-up(lg) {
+            overflow: hidden;
+            width: 100%;
+            display: -webkit-box;
+            -webkit-line-clamp: 1;
+            -webkit-box-orient: vertical;
+          }
+          @include media-breakpoint-up(xl) {
+            margin-bottom: 0.688rem;
+            -webkit-line-clamp: 3;
+          }
+        }
+  
+        a.btn {
+          max-width: 8.438rem;
+          font-size: 1rem;
+          line-height: 1.5rem;
+  
+          @include media-breakpoint-up(xs) {
+            font-size: 1.125rem;
+            line-height: 1.875rem;
+          }
+          @include media-breakpoint-up(lg) {
+            font-size: 1rem;
+            line-height: 1.2rem;
+            padding: 0.5rem;
+          }
+          @include media-breakpoint-up(xl) {
+            font-size: 1.125rem;
+            line-height: 1.875rem;
+          }
+          &::after {
+            content: unset;
+          }
+  
+          &:not(:last-child) {
+            margin-right: 0.8rem;
+          }
+        }
+      }
+
+      &:hover {
+        img {
+          @include trans-scale;
+        }
+        .content-overlay {
+          height: 100%;
+          background: rgba(18, 101, 52, 0.8);
+          box-shadow: 0px 7px 23px rgba(145, 145, 145, 0.19);
+          border-radius: 15px;
+        }
+      }
+    }
+  }
+}
+
+.titan-locally {
+  @include clearfix;
+  padding-top: 3.125rem;
+  @include media-breakpoint-up(lg) {
+    padding-top: 5.813rem;
+  }
+  @include media-breakpoint-up(xl) {
+    padding-top: 10.813rem;
+  }
+  
+  .sub-title {
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    @include media-breakpoint-up(lg) {
+      margin-bottom: 1.125rem;
+      margin-top: 1rem;
+    }
+  }
+
+  h2 {
+    letter-spacing: 0.03em;
+    max-width: 20rem;
+    color: $primary;
+    margin-bottom: 1.625rem;
+    @include media-breakpoint-up(lg) {
+      max-width: 30rem;
+      margin-bottom: 2.5rem;
+    }
+    @include media-breakpoint-up(xl) {
+      max-width: 36rem;
+    }
+  }
+
+  .content {
+    ul {
+      padding: 0;
+      margin-bottom: 2.5rem;
+      @include media-breakpoint-up(lg) {
+        
+      }
+      li {
+        max-width: 20rem;
+        margin-bottom: 1.5rem;
+        
+        @include media-breakpoint-up(md) {
+          width: calc((100% - 1rem) / 2);
+          max-width: 100%;
+
+          &:nth-child(2n+1) {
+            margin-right: 1rem;
+          }
+        }
+
+        .text {
+          font-size: 1.25rem;
+          line-height: 1.875rem;
+          position: relative;
+          padding-left: 2.5rem;
+          @include media-breakpoint-up(xl) {
+            padding-left: 3.438rem;
+          }
+          &::after {
+            content: '';
+            display: block;
+            width: 1.875rem;
+            height: 1.375rem;
+            background: url("../images/titan-icon-home.svg") no-repeat;
+            background-size: 100%;
+            position: absolute;
+            left: 0;
+            top: 0.438rem;
+          }
+        }
+      }
+    }
+  }
+
+  .content-img {
+    position: relative;
+    min-height: 20rem;
+    max-width: 23.438rem;
+    margin: auto;
+    @include media-breakpoint-up(xl) {
+      height: 39rem;
+      max-width: 100%;
+    }
+    .image-1 {
+      width: 15.2rem;
+      position: absolute;
+      top: 0;
+      left: -5px;
+      z-index: 2;
+      @include media-breakpoint-up(xl) {
+        width: auto;
+      }
+    }
+    .image-2 {
+      width: 12.625rem;
+      position: absolute;
+      bottom: 0;
+      right: 15px;
+      @include media-breakpoint-up(xl) {
+        width: auto;
+      }
+    }
+  }
+}
+
+.titan-visit {
+  @include clearfix;
+  padding-top: 6.25rem;
+  @include media-breakpoint-up(lg) {
+    padding-top: 5.75rem;
+  }
+  @include media-breakpoint-up(xl) {
+    padding-top: 8.75rem;
+  }
+  iframe {
+    min-height: 31.25rem;
+  }
+  
+  .content {
+    background: $primary;
+    color: $light;
+    padding: 2.5rem 0.938rem;
+    @include media-breakpoint-up(lg) {
+      padding: 6.313rem 3rem 6.438rem 4.5rem;
+    }
+    @include media-breakpoint-up(xl) {
+      padding: 10.313rem 3rem 6.438rem 5.5rem;
+    }
+    @include media-breakpoint-up(xxl) {
+      padding: 13.313rem 0.5rem 8.438rem 10.5rem;
+    }
+    h2 {
+      letter-spacing: 0.03em;  
+      margin-bottom: 1.625rem;
+      max-width: 16rem;
+      @include media-breakpoint-up(lg) {
+        max-width: 39.188rem;
+        margin-bottom: 2.5rem;
+      }
+    }
+
+    p {
+      font-size: 1.5rem;
+      line-height: 2rem;
+      letter-spacing: 0.03em;
+      margin-bottom: 2.625rem;
+      max-width: 42rem;
+      @include media-breakpoint-up(xl) {
+        font-size: 1.875rem;
+        line-height: 2.813rem;
+      }
+    }
+
+    a.btn {
+      padding: 1rem 1.875rem;
+      max-width: 9.375rem;
+      font-size: 1.375rem;
+      line-height: 1.875rem;
+      letter-spacing: 0.06em;
+    }
+  }
+}
+
+.titan-why-choose {
+  @include clearfix;
+  padding-top: 2.688rem;
+  @include media-breakpoint-up(lg) {
+    padding-top: 5.375rem;
+  }
+  @include media-breakpoint-up(xl) {
+    padding-top: 9.375rem;
+  }
+
+  .col-lg-6 {
+    position: relative;
+    .content-img {
+      @include media-breakpoint-up(xxxl) {
+        position: relative;
+        right: 11rem;
+      }
+      .box {
+        @include media-breakpoint-up(lg) {
+          margin-right: 1rem;
+        }
+        @include media-breakpoint-up(xl) {
+          margin-right: 1.714rem;
+        }
+        .image {
+          margin-bottom: 1.25rem;
+          border-radius: 12px;
+          overflow: hidden;
+          @include media-breakpoint-up(md) {
+            margin-right: 1rem;
+          }
+          @include media-breakpoint-up(lg) {
+            margin-bottom: 1rem;
+            margin-right: 0;
+          }
+          @include media-breakpoint-up(xl) {
+            margin-bottom: 1.714rem;
+          }
+        }
+
+        .image-1,
+        .image-4 {
+          @include media-breakpoint-up(xxxl) {
+            width: 16.25rem;
+          }
+        }
+
+        .image-2,
+        .image-3 {
+          @include media-breakpoint-up(xxxl) {
+            width: 26.5rem;
+          }
+        }
+      }
+    }
+  }
+
+  .content {
+    padding-top: 1.938rem;
+
+    @include media-breakpoint-up(xxxl) {
+      position: relative;
+      left: 8rem;
+    }
+
+    h2 {
+      letter-spacing: 0.03em;
+      max-width: 15rem;
+      color: $primary;
+      margin-bottom: 1.125rem;
+      @include media-breakpoint-up(lg) {
+        margin-bottom: 2.5rem;
+        max-width: 100%;
+        margin-right: 1rem;
+      }
+    }
+    @include media-breakpoint-up(lg) {
+      padding-top: 0;
+    }
+
+    ul {
+      padding: 0;
+      @include media-breakpoint-up(lg) {
+        max-width: 33rem;
+      }
+      li {
+        position: relative;
+        padding-left: 3.125rem;
+        margin-bottom: 2rem;
+        p {
+          font-size: 1.375rem;
+          line-height: 1.875rem;
+          letter-spacing: 0.05em;
+        }
+
+        &::after {
+          content: '';
+          display: block;
+          width: 1.125rem;
+          height: 0.25rem;
+          background: $primary;
+          position: absolute;
+          top: 8px;
+          left: 0;
+        }
+      }
+    }
+  }
+
+  .box-price {
+    margin-bottom: 1.5rem;
+    p {
+      font-size: 1rem;
+      line-height: 1.5rem;
+      color: $dark-gray;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+    }
+
+    h2 {
+      font-size: 2.5rem;
+      line-height: 4.2rem;
+      color: $secondary;
+      margin: 0.188rem 0;
+      @include media-breakpoint-up(lg) {
+        margin-right: 1rem;
+      }
+      @include media-breakpoint-up(xl) {
+        font-size: 3.5rem;
+      }
+    }
+  }
+
+  a.btn {
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+    letter-spacing: 0.06em;
+    background: $primary;
+    border: 1px solid $primary;
+    padding: 12px;
+    max-width: 14rem;
+    margin-bottom: 2.75rem;
+    @include media-breakpoint-up(xl) {
+      font-size: 1.125rem;
+      line-height: 1.875rem;
+      padding: 12px 24px;
+    }
+
+    &::after {
+      content: unset;
+    }
+  }
+
+  .box-star {
+    a.btn {
+      margin-bottom: 1.5rem;
+      white-space: nowrap;
+
+      @include media-breakpoint-up(lg) {
+        margin-bottom: 0;
+        margin-right: 1rem;
+      }
+      @include media-breakpoint-up(xl) {
+        margin-right: 1.5rem;
+      }
+    }
+    .list-star {
+      img {
+        max-width: 1.25rem;
+      }
+  
+      p {
+        font-size: 1rem;
+        line-height: 1.375rem;
+        color: $dark-gray;
+        padding: 0 1rem;
+        @include media-breakpoint-up(xs) {
+          font-size: 1.25rem;
+          line-height: 1.875rem;
+        }
+        @include media-breakpoint-up(lg) {
+          font-size: 1rem;
+          line-height: 1.2rem;
+        }
+        @include media-breakpoint-up(xl) {
+          font-size: 1.25rem;
+          line-height: 1.875rem;
+        }
+  
+        &:not(:first-child) {
+          border-left: 1px solid $dark-gray;
+        }
+  
+        &:last-child {
+         padding-right: 0;
+        }
+      }
+    }
+  }
+}
+
+.titan-call-request {
+  @include clearfix;
+  color: $light;
+  text-align: center;
+  padding-top: 2.813rem;
+  @include media-breakpoint-up(lg) {
+    padding-top: 7.5rem;
+  }
+  h2 {
+    font-size: 2.625rem;
+    line-height: 4rem;
+    letter-spacing: -0.01em;
+    margin-bottom: 1.875rem;
+  }
+
+  h4 {
+    font-size: 1.875rem;
+    line-height: 2.813rem;
+    letter-spacing: 0.03em;
+    font-family: 'Niveau Grotesk medium';
+    font-weight: 500;
+    max-width: 17rem;
+    margin:0 auto 2.5rem; 
+    @include media-breakpoint-up(lg) {
+      max-width: 22rem;
+    }
+  }
+
+  a.btn {
+    max-width: 15.938rem;
+    margin: auto; 
+    font-size: 1.625rem;
+    line-height: 1.25rem;
+    margin-bottom: 5.125rem;
+    padding: 1.5rem 1.875rem;
+  }
+
+  .top-call-request {
+    padding-top: 6.938rem;
+    padding-bottom: 3rem;
+    background: url('../images/titan-bg-call-request-overlay.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    @include media-breakpoint-up(lg) {
+      padding-top: 7.75rem;
+      padding-bottom: 12.125rem;
+    }
+    .rounded-circle {
+      font-family: 'Jost', sans-serif;
+      width: 3.563rem;
+      height: 3.563rem;
+      font-size: 1.5rem;
+      line-height: 1.875rem;
+      letter-spacing: 0.05em;
+      background: $light;
+      color: $secondary;
+      text-transform: uppercase;
+      font-weight: 700;
+      margin: 0 auto 5.188rem;
+      position: relative;
+      @include media-breakpoint-up(lg) {
+        margin: auto;
+      }
+
+      .text {
+        position: relative;
+        z-index: 2;
+      }
+
+      span {
+        @include media-breakpoint-up(lg) {
+          position: absolute;
+          margin: auto;
+          border: 2px solid;
+          border-image-slice: 1;
+          border-width: 2px;
+          border-image-source: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 51.04%, rgba(255, 255, 255, 0) 100%);
+          height: 24.25rem;
+          z-index: 1;
+        }
+      }
+    }
+  }
+
+  @for $i from 1 through 100 {
+    .badge-titan .top .char#{$i} { 
+      transform: rotate(($i*9.7)+deg);
+    }
+    .badge-titan .bottom .char#{$i} { 
+      transform: rotate(($i*-8.5+68)+deg);
+    }
+  }
+
+  .bottom-call-request {
+    background: $dark;
+    .box-badge-titan {
+      top: -3.75rem;
+      left: 50%;
+      transform: translateX(-50%);
+      .badge-titan {
+        width: 7.5rem;
+        height: 7.5rem; 
+        position: relative;
+        border-radius: 50%; 
+        text-align: center;
+        border: 1px solid $light;
+        span {
+          position: absolute;
+          width: 25px;
+          height: 161px;
+          top: -22px;
+          left: 40%;
+          z-index: 100;
+          text-align: center;
+        }
+        div {
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
+        .title {
+            position: relative;
+            z-index: 1;
+            text-transform: uppercase;
+            color:  $light;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+          .year {
+            font-size: 3.125rem;
+            line-height: 3.25rem;
+            letter-spacing: -0.005em;
+            font-weight: 700;
+          }
+          .text {
+            font-size: 1.125rem;
+            line-height: 1.25rem;
+            text-align: center;
+            letter-spacing: 0.155em;
+          }
+        }
+  
+        .text-circle {
+          font-family: 'Niveau Grotesk medium';
+          font-weight: 500;
+          letter-spacing: 0.27em;
+          font-size: 0.75rem;
+          line-height: 0.875rem;
+        }
+    
+        .top {
+          background: transparent;
+          transform: rotate(265deg);
+          -webkit-transform: rotate(265deg);
+        }
+        .bottom {
+          transform: translateY(110px);
+          span {
+            padding-top: 70px;
+            -webkit-transform-origin: top center;
+            transform-origin: top center;
+            top: -54px;
+            left: 40%;
+          }
+        }
+      }
+    }
+      
+    h3 {
+      font-size: 2rem;
+      line-height: 4rem;
+      text-align: center;
+      letter-spacing: -0.01em;
+      text-transform: uppercase;
+      max-width: 18.75rem;
+      margin: auto;
+      padding-top: 9rem;
+      padding-bottom: 6.125rem;
+      @include media-breakpoint-up(lg) {
+        max-width: 100%;
+      }
+      @include media-breakpoint-up(xl) {
+        font-size: 2.625rem;
+      }
+    }
+  }
+}
+
+.titan-we-guide {
+  @include clearfix;
+  padding-top: 2.625rem;
+  @include media-breakpoint-up(lg) {
+    padding-top: 7.5rem;
+  }
+  h2 {
+    letter-spacing: 0.03em;
+    color: $primary;
+    margin-bottom: 2.188rem;
+    @include media-breakpoint-up(md) {
+      max-width: 26rem;
+      margin-bottom: 5rem;
+    }
+    @include media-breakpoint-up(lg) {
+      max-width: 35rem;
+    }
+    @include media-breakpoint-up(xl) {
+      max-width: 50rem;
+    }
+  }
+
+  .wrap-content {
+    border-left: 3px dashed #D3D3D3;
+    margin-left: 1.375rem;
+    padding-left: 2rem;
+    @include media-breakpoint-up(xs) {
+      padding-left: 4rem;
+      margin-left: 2.375rem;
+    }
+    @include media-breakpoint-up(lg) {
+      border-left: 0;
+      margin-left: 0;
+      padding-left: 0;
+      // background: url('../images/titan-line.png') no-repeat;
+      background-size: 97%;
+      background-position-x: 2.5rem;
+    }
+    .list-content {
+      li{
+        display: flex;
+        margin-bottom: 2.5rem;
+        @include media-breakpoint-up(lg) {
+          width: calc(100% / 3);
+          flex-wrap: wrap;
+          position: relative;
+          padding-top: 3.5rem;
+        }
+        .box-image {
+          position: absolute;
+          left: -1.75rem;
+          @include media-breakpoint-up(xs) {
+            left: -2.75rem;
+          }
+          @include media-breakpoint-up(lg) {
+            width: 100%;
+            position: absolute;
+            top: -3rem;
+            left: 0;
+          }
+          .image {   
+            width: 3.5rem;
+            height: 3.5rem;
+            border-radius: 50%;
+            background: #FEF2E7;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            z-index: 3;
+
+            @include media-breakpoint-up(xs) {
+              width: 5.5rem;
+              height: 5.5rem;
+            }
+
+            &::after {
+              content: '';
+              display: block;
+              width: 1.5rem;
+              height: 0.75rem;
+              background: url('../images/titan-icon-chevron-down.svg') no-repeat;
+              background-size: contain;
+              position: absolute;
+              bottom: -5rem;
+              left: 51%;
+              transform: translateX(-50%);
+              @include trans-slow;
+              @include media-breakpoint-up(xs) {
+                bottom: -75%;
+              }
+              @include media-breakpoint-up(lg) {
+                transform: rotate(270deg);
+                -webkit-transform: rotate(270deg);
+                bottom: 2.2rem;
+                left: 15rem;
+              }
+            }
+
+            img {
+              max-width: 1.875rem;
+              @include media-breakpoint-up(xs) {
+                max-width: 2.5rem;
+              }
+            }
+          }
+        }
+
+        .content {
+          flex: 1;
+          h4 {
+            font-size: 1.875rem;
+            line-height: 2.813rem;
+            letter-spacing: 0.03em;
+            margin-bottom: 0.75rem;
+          }
+
+          p {
+            font-size: 1.25rem;
+            line-height: 1.875rem;
+            max-width: 14.375rem;
+            @include media-breakpoint-up(lg) {
+              max-width: 23rem;
+            }
+          }
+        }
+      }
+
+      li.guide-active {
+        .image {
+          background: #F37F14;
+        }
+      }
+
+    } 
+    
+    .list-content-last {
+      @include media-breakpoint-up(lg) {
+        margin-top: 2.2rem;
+      }
+        li {
+          &:last-child {
+            .image {
+              &::after {
+                content: unset;
+              }
+            }
+
+            .content {
+              position: relative;
+              &::before {
+                content: '';
+                width: 35px;
+                height: 100%;
+                background: #fff;
+                z-index: 2;
+                position: absolute;
+                left: -5.2rem;
+
+                @include media-breakpoint-up(lg) {
+                  content: unset;
+                }
+              }
+            }
+          }
+        }
+    }
+
+    // .box-border__dashes-1 {
+    //   border: 3px dashed #D3D3D3;
+    //   border-width: 3px 3px 3px 0;
+    //   border-top-right-radius: 40px;
+    //   border-bottom-right-radius: 40px;
+    // }
+
+    .box-border__dashes-2 {
+      li {
+        position: relative;
+        padding: 0.7rem;
+        &::after {
+          content: '';
+          display: block;
+          background: url('../images/titan-icon-chevron-down.svg') no-repeat;
+          background-size: contain;
+          position: absolute;
+          @include trans-slow;
+          @include media-breakpoint-up(lg) {
+          width: 1.5rem;
+          height: 0.75rem;
+          bottom: -5rem;
+          left: 51%;
+          transform: translateX(-50%);
+          transform: rotate(90deg);
+          -webkit-transform: rotate(90deg);
+          bottom: 2.2rem;
+          left: 15rem;
+          }
+        }
+      }
+    }
+
+    &:hover {
+      li{
+        .box-image {
+          .image {  
+            &::after {
+              left: 17rem;
+            }
+          }
+        }
+      }
+
+      .box-border__dashes-2 {
+        li {
+          &::after {
+            left: 13rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+.titan-latest-news {
+  @include clearfix;
+  padding-top: 3.125rem;
+  padding-bottom: 2.875rem;
+  background: #F8F8F8;
+  margin-top: 4.5rem;
+  @include media-breakpoint-up(lg) {
+    padding: 6.25rem 0;
+  }
+   h2 {
+    font-size: 2.625rem;
+    line-height: 4rem;
+    letter-spacing: -0.01em;
+    margin-bottom: 1.875rem;
+    text-align: center;
+    color: $primary;
+    @include media-breakpoint-up(lg) {
+      margin-bottom: 4.375rem;
+    }
+   }
+
+   .titan-prod-pange__list {
+     margin-bottom: 1.75rem;
+     @include media-breakpoint-up(lg) {
+      margin-bottom: 4.375rem;
+     }
+
+     .col-lg-4 {
+      margin-bottom: 1rem;
+       @include media-breakpoint-up(lg) {
+         margin-bottom: 0;
+       }
+     }
+   }
+
+   .content {
+     position: absolute;
+     a.btn {
+      font-size: 1.125rem;
+      line-height: 1.875rem;
+
+      &::after {
+        content: unset;
+      }
+     }
+   }
+
+   .btn-last {
+    font-size: 1.2rem;
+    line-height: 1.25rem;
+    padding: 1.25rem 0.625rem;
+    @include media-breakpoint-up(xs) {
+      font-size: 1.625rem;
+    }
+    @include media-breakpoint-up(lg) {
+      max-width: 24rem;
+      margin: auto;
+    }
+   }
+
+   .titan-prod-pange__list {
+     
+     .col-lg-4 {
+       .image {
+         overflow: hidden;
+         border-radius: 20px;
+         height: 100%;
+         img {
+           @include trans-tranfom;
+         }
+       }
+
+       h5 {
+         margin-bottom: 1.5rem;
+       }
+      &:hover {
+        img {
+          @include trans-scale;
+        }
+        .content {
+          height: 100%;
+          background: rgba(0, 0, 0, 0.49);
+          border-radius: 20px;
+        }
+      }
+     }
+   }
+}
+
+.titan-award {
+  @include clearfix;
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+  @include media-breakpoint-up(lg) {
+    padding-top: 6.25rem;
+    padding-bottom: 6.25rem;
+  }
+  h3 {
+    font-size: 1.875rem;
+    line-height: 2.813rem;
+    letter-spacing: 0.03em;
+    color: $primary;
+    margin-bottom: 2.188rem;
+    text-transform: uppercase;
+
+    @include media-breakpoint-up(lg) {
+      font-size: 2.625rem;
+      line-height: 4rem;
+      letter-spacing: -0.01em;
+      margin-bottom: 2.5rem;
+    }
+  }
+  p {
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+    font-family: 'Niveau Grotesk medium';
+    font-weight: 500;
+    color: $dark-gray;
+    @include media-breakpoint-up(lg) {
+      font-size: 1.5rem;
+      line-height: 2.063rem;
+      letter-spacing: 0.05em;
+      margin-bottom: 2rem;
+    }
+  }
+}
+
+.form-home {
+  .form-control {
+    border-radius: 6px;
+    color: $dark;
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+  }
+
+  .btn {
+    position: relative;
+    text-transform: uppercase;
+    background: $secondary;
+    border: 1px solid $secondary;
+    border-radius: 6px;
+    color: $light;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Niveau Grotesk medium';
+    font-weight: 500;
+    text-align: center;
+    padding: 1rem;
+    width: 100%;
+    font-size: 1.2rem;
+    line-height: 1.25rem;
+    @include media-breakpoint-up(xs) {
+      font-size: 1.625rem;
+    }
+  }
+  
+  .btn:after {
+    content: '';
+    display: block;
+    width: 1.438rem;
+    height: 1.063rem;
+    background:url('../images/titan-icon-arrow__right.svg') no-repeat;
+    background-position: center;
+    background-size: 100%;
+    margin-left: 0.922rem;
+    fill: $light;
+  }
+
+  textarea {
+    resize: none;
+  }
+}
+
+.banner-home-page {
+  .text-fix-left {
+    @include media-breakpoint-up(lg) {
+      font-size: 0.875rem;
+      line-height: 1.875rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: $light;
+      transform: rotate(-90deg);
+      -webkit-transform: rotate(-90deg);
+      position: absolute;
+      left: -60px;
+      top: 40%;
+    }
+
+    span {
+      height: 1.875rem;
+      border: 1px solid $light;
+      transform: rotate(90deg);
+      -webkit-transform: rotate(90deg);
+      display: block;
+      margin-right: 1.5rem;
+    }
+  }
+}
+
+a.btn-fix__left {
+  position: fixed;
+  right: -4.8rem;
+  top: 30rem;
+  letter-spacing: 0.105em;
+  transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  border-radius: 6px 6px 0px 0px;
+  padding: 1rem 4.063rem 1rem 1.25rem;
+
+  @include media-breakpoint-up(lg) {
+
+  }
+
+  &::after {
+    position: absolute;
+    right: 1.375rem;
+    top: 40%;
+    transform: rotate(
+90deg);
+    -webkit-transform: rotate(90deg);
+  }
+}

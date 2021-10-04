@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Location</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+		integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+		crossorigin="anonymous" />
+	<link rel="stylesheet" href="./assets/css/index.css" />
+</head>
+
+<body>
+	<header class="header-page fixed-top transition">
+		<div class="d-md-none header-top-bar">
+			<a href="tel:132736"
+				class="text-light text-uppercase d-flex align-items-center justify-content-center bg-titan-secondary btn-phone">
+				<div class="image icon-size-20">
+					<img src="./assets/images/titan-icon-phone.svg" alt="titan-icon-phone">
+				</div>
+				<div class="text">132736</div>
+			</a>
+		</div>
+		<div class="container">
+			<div class="d-flex justify-content-between content">
+				<div class="d-flex align-items-center img-logo">
+					<a href="index.html"><img src="./assets/images/titan-logo.png" alt="logo-main" /></a>
+				</div>
+				<div class="d-flex align-items-center text-nowrap">
+					<ul class="menu-header list-unstyled d-none d-lg-flex align-items-center mb-0 fs-14">
+						<li>
+							<a href="./blog-detail.html" class="text-light text-uppercase ">Blog details</a>
+						</li>
+						<li>
+							<a href="./location.html" class="text-light text-uppercase ">Locations</a>
+						</li>
+						<li>
+							<a href="./blog-listing.html" class="text-light text-uppercase ">Blog listing</a>
+						</li>
+						<li>
+							<a href="./contact.html" class="text-light text-uppercase ">Contact</a>
+						</li>
+						<li>
+							<a href="tel:132736" class="text-light text-uppercase d-flex align-items-center btn">
+								<div class="image d-flex">
+									<img src="./assets/images/titan-icon-phone.svg" alt="">
+								</div>
+								<div class="text">132736</div>
+							</a>
+						</li>
+					</ul>
+					<div id="btn-hamburger" class="btn-hamburger show d-lg-none">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<aside class="menu-aside-page">
+		<div class="backdrop"></div>
+		<div class="menu-aside px-5">
+			<ul class="list-unstyled text-light">
+				<li>
+					<a class="d-block text-light fs-20 py-2 text-uppercase">Products</a>
+				</li>
+				<li>
+					<a class="d-block text-light fs-20 py-2 text-uppercase">Locations</a>
+				</li>
+				<li>
+					<a class="d-block text-light fs-20 py-2 text-uppercase">About</a>
+				</li>
+				<li>
+					<a href="#" class="d-block text-light text-uppercase fs-20 py-2">Contact</a>
+				</li>
+			</ul>
+			<div class="menu-aside-close">
+				<span></span>
+				<span></span>
+			</div>
+		</div>
+	</aside>
+	<main>
+		<section class="content-inline-image position-relative">
+			<div class="position-absolute h-100 w-100"></div>
+			<div class="banner-bg w-100 h--75 h-lg--105 transition">
+				<img src="./assets/images/titan-banner__home.jpg" alt="banner-header" class="w-100 h-100 object-fit-cover" />
+			</div>
+			<div class="content position-absolute">
+				<div class="container">
+					<div class="d-lg-flex justify-content-between align-items-center">
+						<h1>Locations</h1>
+						<div class="box-evaluate d-flex">
+							<div class="image d-flex">
+								<img src="./assets/images/titan-icon-talk-box.png" alt="">
+							</div>
+							<div class="content">
+								<div class="list-star d-flex">
+									<div class="d-flex">
+										<img src="./assets/images/titan-icon-star.svg" alt="">
+										<img src="./assets/images/titan-icon-star.svg" alt="">
+										<img src="./assets/images/titan-icon-star.svg" alt="">
+										<img src="./assets/images/titan-icon-star.svg" alt="">
+										<img src="./assets/images/titan-icon-half-star.svg" alt="">
+									</div>
+									<div class="d-flex text">
+										<p>4.5 stars</p>
+										<p>175+ reviews</p>
+									</div>
+								</div>
+								<div class="body-archetype">on productreview.com.au</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="page-location">
+			<div class="wrap-container-max">
+				<div class="container">
+					<div class="text-center">
+						<div class="content">
+							<div class="content-location">
+								<div class="search-box">
+									<div class="list-search">
+										<div class="input">
+											<input type="text" placeholder="Enter Location">
+											<div class="select">
+												<select name="mile" id="mile">
+													<option value="1">50km</option>
+													<option value="2">60km</option>
+													<option value="3">70km</option>
+													<option value="4">80km</option>
+												</select>
+											</div>
+										</div>
+										<a href="#" class="btn btn-search">
+											<img src="./assets/images/titan-icon-search.svg" alt="search-icon">
+										</a>
+									</div>
+									<div class="location-list">
+										<ul>
+											<li>
+												<div class="list-items">
+													<div class="items-left">
+														<h5>BUNDABERG</h5>
+														<p>83 Coluche street, Armidale NSW 2350</p>
+														<span>Online Enquiry</span>
+													</div>
+													<div class="items-right">
+														<p>Authorised Reseller</p>
+														<img src="./assets/images/titan-icon-location.svg" alt="titan-icon-location">
+													</div>
+												</div>
+											</li>
+											<li>
+												<div class="list-items">
+													<div class="items-left">
+														<h5>BUNDAMBA</h5>
+														<p>83 Coluche street, Armidale NSW 2350</p>
+														<span>Online Enquiry</span>
+													</div>
+													<div class="items-right">
+														<p>Authorised Reseller</p>
+														<img src="./assets/images/titan-icon-location.svg" alt="titan-icon-location">
+													</div>
+												</div>
+											</li>
+											<li>
+												<div class="list-items">
+													<div class="items-left">
+														<h5>CAIRNS</h5>
+														<p>83 Coluche street, Armidale NSW 2350</p>
+														<span>Online Enquiry</span>
+													</div>
+													<div class="items-right">
+														<p>Authorised Reseller</p>
+														<img src="./assets/images/titan-icon-location.svg" alt="titan-icon-location">
+													</div>
+												</div>
+											</li>
+											<li>
+												<div class="list-items">
+													<div class="items-left">
+														<h5>CAPALABA</h5>
+														<p>83 Coluche street, Armidale NSW 2350</p>
+														<span>Online Enquiry</span>
+													</div>
+													<div class="items-right">
+														<p>Authorised Reseller</p>
+														<img src="./assets/images/titan-icon-location.svg" alt="titan-icon-location">
+													</div>
+												</div>
+											</li>
+											<li>
+												<div class="list-items">
+													<div class="items-left">
+														<h5>CHARLEVILLE</h5>
+														<p>83 Coluche street, Armidale NSW 2350</p>
+														<span>Online Enquiry</span>
+													</div>
+													<div class="items-right">
+														<p>Authorised Reseller</p>
+														<img src="./assets/images/titan-icon-location.svg" alt="titan-icon-location">
+													</div>
+												</div>
+											</li>
+											<li>
+												<div class="list-items">
+													<div class="items-left">
+														<h5>CHARLEVILLE</h5>
+														<p>83 Coluche street, Armidale NSW 2350</p>
+														<span>Online Enquiry</span>
+													</div>
+													<div class="items-right">
+														<p>Authorised Reseller</p>
+														<img src="./assets/images/titan-icon-location.svg" alt="titan-icon-location">
+													</div>
+												</div>
+											</li>
+											<li>
+												<div class="list-items">
+													<div class="items-left">
+														<h5>CHARLEVILLE</h5>
+														<p>83 Coluche street, Armidale NSW 2350</p>
+														<span>Online Enquiry</span>
+													</div>
+													<div class="items-right">
+														<p>Authorised Reseller</p>
+														<img src="./assets/images/titan-icon-location.svg" alt="titan-icon-location">
+													</div>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="location-map">
+									<iframe
+										src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d908142.9304351858!2d152.847628!3d-27.236936!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b91579aac93d233%3A0x402a35af3deaf40!2sBrisbane%20Queensland%2C%20%C3%9Ac!5e0!3m2!1svi!2sus!4v1631600290365!5m2!1svi!2sus"
+										width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<a class="btn btn-fix__left bg-titan-secondary text-light d-none d-lg-flex">
+			Get a Quote
+		</a>
+	</main>
+	<footer class="footer-page">
+		<section class="sub-footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-5">
+						<h2>Get In Touch</h2>
+						<p>Our consultants are standing by to discuss your window covering needs. So whether it be for your house or
+							office, get in touch today so we can discuss your exact needs</p>
+						<div class="box-evaluate d-flex">
+							<div class="image d-flex">
+								<img src="./assets/images/titan-icon-talk-box.png" alt="">
+							</div>
+							<div class="content">
+								<div class="list-star d-flex">
+									<div class="d-flex">
+										<img src="./assets/images/titan-icon-star.svg" alt="">
+										<img src="./assets/images/titan-icon-star.svg" alt="">
+										<img src="./assets/images/titan-icon-star.svg" alt="">
+										<img src="./assets/images/titan-icon-star.svg" alt="">
+										<img src="./assets/images/titan-icon-half-star.svg" alt="">
+									</div>
+									<div class="d-flex text">
+										<p>4.5 stars</p>
+										<p>175+ reviews</p>
+									</div>
+								</div>
+								<div class="body-archetype">on productreview.com.au</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-7">
+						<div class="form-home">
+							<form>
+								<div class="form-row">
+									<div class="form-group col-md-6">
+										<input type="text" class="form-control" id="inputAddress" placeholder="Your Name">
+									</div>
+									<div class="form-group col-md-6">
+										<input type="number" class="form-control" id="inputPassword4" placeholder="Phone Number">
+									</div>
+								</div>
+								<div class="form-group">
+									<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+										placeholder="Message"></textarea>
+								</div>
+								<div class="form-group">
+									<input type="email" class="form-control" id="inputEmail4" placeholder="Email Address">
+								</div>
+								<button type="submit" class="btn btn-primary">Send to us</button>
+							</form>
+						</div>
+					</div>
+				</div>
+		</section>
+		<div class="main-footer bg-titan-dark">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-4">
+						<div class="img-logo">
+							<img src="./assets/images/titan-logo.png" alt="logo-main" class="w-100 mb-9 mb-lg-14" />
+						</div>
+						<div>
+							<div class="d-flex mb-lg-6">
+								<div class="image"><img src="./assets/images/titan-icon-facebook.svg" alt=""></div>
+								<div class="image"><img src="./assets/images/titan-icon-inta.svg" alt=""></div>
+							</div>
+							<div class="d-flex mb-lg-6">
+								<a href="#" class="text-link">Privacy Policy</a>
+								<a href="#" class="text-link">Terms & Conditions</a>
+							</div>
+							<div class="name-company">© 2021 Titan Corporation</div>
+						</div>
+					</div>
+					<div class="col-lg-8">
+						<div class="row menu-footer">
+							<div class="col-lg-3 not-link">
+								Our Products
+							</div>
+							<div class="col-lg-4">
+								<ul>
+									<li><a href="">Home Garages and Sheds</a></li>
+									<li><a href="">Farm Sheds</a></li>
+									<li><a href="">Industrial and Commercial</a></li>
+									<li><a href="">Carports</a></li>
+								</ul>
+							</div>
+							<div class="col-lg-4">
+								<ul>
+									<li><a href="">Titan Houses - NEW</a></li>
+									<li><a href="">Toolsheds</a></li>
+									<li><a href="">Parts</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="row menu-footer">
+							<div class="col-lg-3 not-link">
+								Useful links
+							</div>
+							<div class="col-lg-4">
+								<ul>
+									<li><a href="">Admin</a></li>
+									<li><a href="">IR Login</a></li>
+									<li><a href="">Titan Lite Login</a></li>
+									<li><a href="">Privacy Policy</a></li>
+								</ul>
+							</div>
+							<div class="col-lg-4">
+								<ul>
+									<li><a href="">Titan Lite Login</a></li>
+									<li><a href="">Privacy Policy</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<script src="https://unpkg.com/@popperjs/core@2"></script>
+	<script src="./assets/js/bootstrap.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="./assets/js/index.js"></script>
+	<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/9487/jquery.matchHeight-min.js"></script>
+</body>
+
+</html>

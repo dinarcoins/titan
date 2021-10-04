@@ -1,0 +1,19 @@
+@mixin trans {
+  transition: all 0.3s ease;
+}
+
+@mixin trans-fast {
+  transition: all 0.15s ease;
+}
+
+@mixin trans-slow {
+  transition: all 0.5s ease;
+}
+
+@mixin trans-tranfom {
+  transition: transform .5s ease;
+}
+
+@mixin trans-scale {
+  transform: scale(1.1);
+}

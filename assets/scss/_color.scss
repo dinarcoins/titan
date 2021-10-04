@@ -1,0 +1,70 @@
+.bg-primary-light {
+  background-color: $primary-light;
+}
+
+.bg-light-o2 {
+  background-color: rgba($color: $light, $alpha: 0.2) !important;
+}
+
+.bg-dark-o2 {
+  background-color: rgba($color: $primary, $alpha: 0.2) !important;
+}
+
+.bg-secondary-light {
+  background-color: $secondary-light !important;
+}
+
+.hover-primary-light {
+  &:hover {
+    background-color: rgba($color: $primary, $alpha: 0.2) !important;
+  }
+}
+
+.bg-gradient-slide {
+  background: linear-gradient(
+    0deg,
+    rgba(26, 26, 26, 0.9) -4.22%,
+    rgba(4, 4, 4, 0.1) 57.63%
+  );
+}
+
+.bg-gradient-banner {
+  background: linear-gradient(
+    0deg,
+    rgba(0, 60, 91, 0.81) 0%,
+    rgba(0, 87, 134, 0) 34.27%
+  );
+}
+
+.border-light-o4 {
+  border-color: rgba($color: $light, $alpha: 0.4);
+}
+
+.bg-over-primary {
+  background: #15753C;
+  mix-blend-mode: multiply;
+}
+
+.bg-titan-primary {
+  background: #126534;
+}
+
+.bg-titan-dark {
+  background: #192B29;
+}
+
+.bg-titan-secondary {
+  background: #F37F14;
+}
+
+.cl-titan-primary {
+  color: $primary;
+}
+
+.cl-titan-dark {
+  color: $dark;
+}
+
+.cl-titan-secondary {
+  color: $secondary;
+}

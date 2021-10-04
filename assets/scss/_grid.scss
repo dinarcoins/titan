@@ -1,0 +1,35 @@
+@for $i from 0 through 12 {
+  .col-c#{$i} {
+    column-count: $i;
+  }
+}
+
+@for $i from 0 through 12 {
+  @include media-breakpoint-up(md) {
+    .col-md-c#{$i} {
+      column-count: $i;
+    }
+  }
+}
+
+@for $i from 0 through 12 {
+  @include media-breakpoint-up(lg) {
+    .col-lg-c#{$i} {
+      column-count: $i;
+    }
+  }
+}
+
+@for $i from 0 through 12 {
+  @include media-breakpoint-up(xxl) {
+    .col-xxl-c#{$i} {
+      column-count: $i;
+    }
+  }
+}
+
+@for $i from 0 through 25 {
+  .col-g#{$i} {
+    column-gap: $i * 4px;
+  }
+}

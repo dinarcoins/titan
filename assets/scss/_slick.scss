@@ -1,0 +1,64 @@
+.titan-prod-pange__list,
+.titan-award {
+  .slick-list {
+    margin-bottom: 1.875rem;
+  }
+
+  .slick-dots {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    padding: 0;
+    
+    li {
+      list-style-type: none;
+      padding: 0 0.156rem;
+
+      @include media-breakpoint-up(lg) {
+        padding: 0 0.875rem;
+      }
+      button {
+        background: transparent;
+        border: 1px solid $dark-gray-2;
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        display: block;
+        padding: 0;
+        text-indent: -99999px;
+        @include media-breakpoint-up(lg) {
+          background: $dark-gray-2;
+          width: 10px;
+          height: 10px;
+        }
+      }
+    }
+
+    li.slick-active {
+      button {
+        background: $primary;
+        border: 1px solid $primary;
+      }
+  }
+  }
+}
+
+.slick-slide {
+  outline: none !important;
+}
+
+.slick-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  border: none;
+  text-indent: 99999px;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+

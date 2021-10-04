@@ -1,0 +1,100 @@
+@for $i from 0 through 40 {
+  .fs-#{$i} {
+    font-size: #{$i}px;
+  }
+}
+
+.lh-1-75 {
+  line-height: 1.75;
+}
+
+.text-primary-grey {
+  color: $primary-grey !important;
+}
+
+.hover-underline {
+  &:hover {
+    text-decoration: underline !important;
+  }
+}
+
+.body-archetype {
+  font-size: 0.875rem;
+  line-height: 1.375rem;
+
+  @include media-breakpoint-up(md) {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
+
+h1 {
+  font-family: 'Niveau Grotesk bold';
+  font-weight: 900;
+  font-size: 2.625rem;
+  line-height: 4rem;
+
+  @include media-breakpoint-up(md) {
+    font-size: 4.688rem;
+    line-height: 5.625rem;
+  }
+}
+
+h2 {
+  font-family: 'Niveau Grotesk bold';
+  font-weight: 700;
+  font-size: 2.625rem;
+  line-height: 4rem;
+
+  @include media-breakpoint-up(md) {
+    font-size: 3.5rem;
+    line-height: 4.2rem;
+  }
+}
+
+h3 {
+  font-family: 'Niveau Grotesk bold';
+  font-weight: 700;
+  font-size: 1.625rem;
+  line-height: 3rem;
+  letter-spacing: -0.01em;
+
+  @include media-breakpoint-up(md) {
+    font-size: 2.625rem;
+    line-height: 4rem;
+  }
+}
+
+h4 {
+  font-family: 'Niveau Grotesk bold';
+  font-weight: 700;
+  font-size: 0.875rem;
+  line-height: 1.813rem;
+  letter-spacing: 0.03em;
+
+  @include media-breakpoint-up(md) {
+    font-size: 1.875rem;
+    line-height: 2.813rem;
+  }
+}
+
+h5 {
+  font-family: 'Niveau Grotesk bold';
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 2.063rem;
+  letter-spacing: 0.05em;
+}
+
+h6 {
+  font-family: 'Niveau Grotesk medium';
+  font-weight: 500;
+  font-size: 0.125rem;
+  line-height: 0.875rem;
+  letter-spacing: 0.05em;
+
+  @include media-breakpoint-up(md) {
+    font-size: 1.125rem;
+    line-height: 1.875rem;
+  }
+}

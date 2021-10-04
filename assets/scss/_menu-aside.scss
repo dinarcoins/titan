@@ -1,0 +1,104 @@
+.menu-aside {
+  position: fixed;
+  top: 0;
+  right: -150%;
+  width: 320px;
+  max-width: 100%;
+  height: calc(100vh);
+  background-color: $primary;
+  padding-top: 50px;
+  z-index: 1050;
+  @include trans;
+
+  .has-child {
+    > a {
+      position: relative;
+      padding-right: 20px;
+      height: 100%;
+
+      &:after {
+        content: '';
+        background: url(/assets/images/icon-arow-down-white.svg) no-repeat;
+        background-size: contain;
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%) rotate(0deg);
+        width: 12px;
+        height: 6px;
+        @include trans;
+      }
+
+      &.collapsed {
+        &:after {
+          transform: translateY(-50%) rotate(-90deg);
+        }
+      }
+    }
+  }
+
+  a {
+    &:hover {
+      color: rgba($color: $light, $alpha: 0.7) !important;
+    }
+  }
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba($color: $dark, $alpha: 0.85);
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1035;
+  @include trans;
+}
+
+.menu-aside-close {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  width: 28px;
+  height: 28px;
+  z-index: 1070;
+  opacity: 0;
+  visibility: hidden;
+  cursor: pointer;
+  @include trans;
+
+  span {
+    display: block;
+    width: 27px;
+    height: 2px;
+    background-color: $light;
+    border-radius: 2px;
+
+    &:first-child {
+      transform: translate(2px, 14px) rotate(45deg);
+    }
+    &:last-child {
+      transform: translate(1px, 12px) rotate(-45deg);
+    }
+  }
+}
+
+.menu-aside-page {
+  &.show {
+    .menu-aside {
+      right: 0;
+    }
+
+    .backdrop {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .menu-aside-close {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+}
