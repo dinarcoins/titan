@@ -44415,9 +44415,14 @@ a.btn-outline {
 @media (min-width: 375px) {
   .banner-home-page .content h1 {
     font-size: 2rem;
-    max-width: 35rem;
     line-height: 4rem;
     margin: 0 auto 3.5rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .banner-home-page .content h1 {
+    max-width: 35rem;
   }
 }
 

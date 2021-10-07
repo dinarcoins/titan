@@ -284,9 +284,11 @@ a.btn-outline {
 			line-height: 3.5rem;
 			@include media-breakpoint-up(xs) {
 				font-size: 2rem;
-				max-width: 35rem;
 				line-height: 4rem;
 				margin: 0 auto 3.5rem;
+			}
+			@include media-breakpoint-up(lg) {
+				max-width: 35rem;
 			}
 			@include media-breakpoint-up(xxl) {
 				max-width: 70rem;
