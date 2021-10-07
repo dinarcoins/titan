@@ -280,10 +280,11 @@ a.btn-outline {
 		h1 {
 			max-width: 21rem;
 			margin: 0 auto 1.5rem;
-			font-size: 2.325rem;
+			font-size: 1.525rem;
 			line-height: 3.5rem;
 			@include media-breakpoint-up(xs) {
-				font-size: 2.325rem;
+				font-size: 2rem;
+				max-width: 35rem;
 				line-height: 4rem;
 				margin: 0 auto 3.5rem;
 			}
