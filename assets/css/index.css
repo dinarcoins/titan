@@ -44420,12 +44420,6 @@ a.btn-outline {
   }
 }
 
-@media (min-width: 992px) {
-  .banner-home-page .content h1 {
-    max-width: 35rem;
-  }
-}
-
 @media (min-width: 1440px) {
   .banner-home-page .content h1 {
     max-width: 70rem;
